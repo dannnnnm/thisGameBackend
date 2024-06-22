@@ -1,0 +1,25 @@
+{
+  "name": "thisgameserver",
+  "version": "1.0.0",
+  "description": "server for ThisGame",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "test",
+    "build": "tsc",
+    "exec": "npm ./dist/index.js",
+    "qtest": "npm run build & tsx watch src/index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.2",
+    "tsx": "^4.15.4",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "socket.io": "^4.7.5"
+  }
+}
