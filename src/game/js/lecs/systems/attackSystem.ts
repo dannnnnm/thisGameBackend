@@ -27,7 +27,7 @@ export class AttackSystem extends BaseSystem {
     #player2Attack
     #entityManager
 
-    constructor(player1Id, player2Id, componentManager, entitiyManager, config = {}, logger) {
+    constructor(player1Id, player2Id, componentManager, entitiyManager, config = {}, logger=null) {
         super(componentManager, logger)
         this.#player1Collisions = this.componentManager.getEntityComponentByType(player1Id, COLLISION_COMPONENT)
         this.#player2Collisions = this.componentManager.getEntityComponentByType(player2Id, COLLISION_COMPONENT)

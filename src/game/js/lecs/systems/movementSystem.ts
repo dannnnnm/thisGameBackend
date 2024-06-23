@@ -5,7 +5,7 @@ import { BaseSystem } from "./baseSystem.js";
 
 export class MovementSystem extends BaseSystem{
     #doomMove:boolean
-    constructor(componentManager,config={doomMove:false},logger){
+    constructor(componentManager,config={doomMove:false},logger=null){
         super(componentManager,logger)
         this.#doomMove=config.doomMove
     }

@@ -19,7 +19,7 @@ export class CollisionSystem extends BaseSystem{
     #risingTension
     #repelPhys
     arenaElement
-    constructor(player1Id,player2Id,componentManager,config:any={},logger){
+    constructor(player1Id,player2Id,componentManager,config:any={},logger=null){
         
         super(componentManager,logger)
         this.arenaElement=document.getElementById("arenaZone")

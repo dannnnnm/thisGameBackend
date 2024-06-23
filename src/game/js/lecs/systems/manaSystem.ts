@@ -28,7 +28,7 @@ export class ManaSystem extends BaseSystem{
 
    
 
-    constructor(player1Id,player2Id,componentManager,config={},logger){
+    constructor(player1Id,player2Id,componentManager,config={},logger=null){
         super(componentManager,logger)
         this.#player1Mana=this.componentManager.getEntityComponentByType(player1Id,MANA_COMPONENT)
         this.#player2Mana=this.componentManager.getEntityComponentByType(player2Id,MANA_COMPONENT)
